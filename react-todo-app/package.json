@@ -12,6 +12,7 @@
     "@types/react-dom": "^18.0.5",
     "@types/redux-thunk": "^2.1.0",
     "axios": "^0.27.2",
+    "bootstrap": "^4.6.0",
     "react": "^18.1.0",
     "react-bootstrap": "^2.4.0",
     "react-dom": "^18.1.0",
@@ -51,6 +52,7 @@
     ]
   },
   "devDependencies": {
-    "@types/redux-logger": "^3.0.9"
+    "@types/redux-logger": "^3.0.9",
+    "node-sass": "^7.0.1"
   }
 }
