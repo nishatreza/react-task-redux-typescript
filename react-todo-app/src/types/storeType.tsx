@@ -1,7 +1,9 @@
 export type todo = {
 	id: string;
 	title: string;
-	isCompleted: boolean;
+	completed: boolean;
+
+	
 };
 
 interface storeType {

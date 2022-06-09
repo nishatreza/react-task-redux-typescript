@@ -47,7 +47,7 @@ const App: React.FC<AppPropType> = ({
     let complete: todo[] = [];
     let inComplete: todo[] = [];
     todos.forEach((todo) => {
-      if (todo.isCompleted) complete.push(todo);
+      if (todo.completed) complete.push(todo);
       else inComplete.push(todo);
     });
     return (

@@ -8,6 +8,8 @@ import App from "./App/App";
 import reducers from "./reducers";
 import "bootstrap/dist/css/bootstrap.min.css";
 import createSagaMiddleware from "redux-saga";
+import todoSaga from "./sagas/todoSaga";
+
 
 
 const sagaMiddleware = createSagaMiddleware();
@@ -15,7 +17,7 @@ const sagaMiddleware = createSagaMiddleware();
 const store = createStore(reducers, composeWithDevTools(applyMiddleware(sagaMiddleware)));
 
 
-// sagaMiddleware.run();
+sagaMiddleware.run(todoSaga);
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement

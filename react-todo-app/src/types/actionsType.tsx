@@ -27,6 +27,31 @@ export interface getTodos {
 
 // For Reducers
 
+export interface createdTodoAction {
+	type: "CREATED_TODO";
+	todo: todo;
+}
+
+export interface deletedTodoAction {
+	type: "DELETED_TODO";
+	id: string;
+}
+
+export interface markedCompleteAction {
+	type: "MARKED_COMPLETE";
+	id: string;
+}
+
+export interface markedIncompleteAction {
+	type: "MARKED_INCOMPLETE";
+	id: string;
+}
+
+export interface gotTodos {
+	type: "GOT_TODOS";
+	todos: todo[];
+}
+
 export const actionIds = {
 	MARK_COMPLETE: "MARK_COMPLETE",
 	MARK_INCOMPLETE: "MARK_INCOMPLETE",
